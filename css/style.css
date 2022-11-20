@@ -11,6 +11,35 @@ body {
   height: 100vh;
 }
 
+.header {
+  width: 100%;
+  padding: 10px 25px;
+  font-size: 30px;
+  background-color: wheat;
+  font-weight: 700;
+}
+.header ul {
+  margin: 0 auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+.header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.header a:hover {
+  color: rgb(170, 98, 98);
+}
+
 .slider-container {
   position: relative;
   overflow: hidden;

@@ -11,6 +11,30 @@ body {
   height: 100vh;
 }
 
+.header {
+  width: 100%;
+  padding: 10px 25px;
+  font-size: 30px;
+  background-color: wheat;
+  font-weight: 700;
+  ul {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba($color: #1c1c1c, $alpha: 1.0);
+    transition: .4s all;
+  }
+  a:hover {
+    color: rgb(170, 98, 98);
+  }
+}
+
 .slider-container {
   position: relative;
   overflow: hidden;
