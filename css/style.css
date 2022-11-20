@@ -62,8 +62,39 @@ body {
   width: 100%;
 }
 
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  font-size: 16px;
+  padding: 15px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+button:hover {
+  color: #222;
+}
+button:focus {
+  outline: none;
+}
+
 .slider-container .action-buttons button {
   position: absolute;
   left: 35%;
   top: 50%;
+  z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
