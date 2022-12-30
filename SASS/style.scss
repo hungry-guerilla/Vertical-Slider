@@ -16,12 +16,13 @@ body {
 
 .header {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   padding: 10px 25px;
   font-size: 30px;
   background-color: wheat;
   font-weight: 700;
   box-shadow: rgba(33, 35, 38, 0.58) 0px 10px 10px -10px;
+  z-index: 999;
   ul {
     margin: 0 auto;
     width: 50%;
@@ -126,10 +127,13 @@ button:focus {
 }
 
 .section__uno {
-  background-color: rgb(217, 216, 216);
   padding: 50px;
   max-width: 100%;
   height: 785px;
+  background: linear-gradient(90deg, wheat, #e73c7e, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	transform: translate3d(0, 0, 0);
   .section__uno-title{
     text-align: center;
     font-size: 12em;
@@ -138,11 +142,30 @@ button:focus {
     font-weight: 900;
     letter-spacing: .1em;
     text-shadow:4px 3px 0px rgb(3, 3, 3), 9px 8px 0px rgba(0,0,0,0.15);
-    ;
+    &:hover{
+      color:rgb(238, 238, 238);
+    }
   }
   .section__uno-descr {
     font-size: 5em;
     text-align: center;
-    
+
   }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+b {
+  color:rgb(238, 238, 238);
+  font-weight: 900;
+  text-transform: uppercase;
+
 }
